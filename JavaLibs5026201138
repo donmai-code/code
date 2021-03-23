@@ -8,7 +8,7 @@ public class JavaLibs5026201138{
 			System.exit(0);
 		}
 		else {
-		//name
+		//nama
 		String name = (String)JOptionPane.showInputDialog(null, "First thing first, what is your name?", "Introduction", 1, null, null, "String");
 		//male name
 		String maleName = (String)JOptionPane.showInputDialog(null, "Give me a male name", "Question #1", 1, null, null, "String");
@@ -30,21 +30,30 @@ public class JavaLibs5026201138{
 		String pluralSubject = (String)JOptionPane.showInputDialog(null, "Give me a plural subject", "Question #9", 1, null, null, "String");
 		//vehicle name
 		String vehicle = (String)JOptionPane.showInputDialog(null, "Give me a vehicle name", "Question #10", 1, null, null, "String");
-    		//double operation
+		//double operations 1
 		double homeworkInTime = timeHour / wholeNumber;
-    		//double operation
+		//double operations 2
 		double percentage = wholeNumber * fraction;
-    		//the full story
+		//int operations
+		int doubleHomework = wholeNumber * 2;
+		
 		String cerita = "You, " + name + ", helped me write this story.\r\n"
 				+ "\r\n"
 				+ "This is " + maleName + ", he is a student in Oracle High School, and today, " + maleName +" is late.\r\n"
 				+ "He woke up at 8 am today because he spent the last night " + verbIng +". He has " + wholeNumber + " homework left. \r\n"
-				+ "He must hurry to his school because the distance between his home and his school is " + distance + "meters. \r\n"
-				+ "After he arrived in school, he must finish his homework in " + timeHour + " hours that means he must do 1 homework in " + homeworkInTime + " hours. \r\n" 
+				+ "He must hurry to his school because the distance between his home and his school is " + distance + " meters. \r\n"
+				+ "After he arrived in school, he has to finish his homework in " + timeHour + " hours that means he must do 1 homework in " + homeworkInTime + " hours. \r\n" 
 				+ "The teacher, Mr. " + maleTeacherName + " came when he was at " + percentage + "% of completing his work. \r\n"
-				+ "He was not done and Mr. " + maleTeacherName + " was mad at him. He was given the assignment to give out " + pluralNoun + " to " + pluralSubject + ". \r\n" 
+				+ "He was not done and Mr. " + maleTeacherName + " was mad at him. He was given the assignment to give out " + pluralNoun + " to " + pluralSubject + ", and was given " + doubleHomework + " homerwork for next week. \r\n" 
 				+ "While riding his " + vehicle + ". " + maleName + " immidiately went to do that after school ends and he swore to himself that he wont stay up late night again.";
+		
 		JOptionPane.showMessageDialog(null, cerita, "THE RESULTS", 1);
-    
+		
+		
 		}
+		
+		
 	}
+
+
+}
