@@ -30,11 +30,11 @@ public class JavaLibs5026201138{
 		String pluralSubject = (String)JOptionPane.showInputDialog(null, "Give me a plural subject", "Question #9", 1, null, null, "String");
 		//vehicle name
 		String vehicle = (String)JOptionPane.showInputDialog(null, "Give me a vehicle name", "Question #10", 1, null, null, "String");
-    //double operation
+    		//double operation
 		double homeworkInTime = timeHour / wholeNumber;
-    //double operation
+    		//double operation
 		double percentage = wholeNumber * fraction;
-    //the full story
+    		//the full story
 		String cerita = "You, " + name + ", helped me write this story.\r\n"
 				+ "\r\n"
 				+ "This is " + maleName + ", he is a student in Oracle High School, and today, " + maleName +" is late.\r\n"
