@@ -1,0 +1,50 @@
+import javax.swing.JOptionPane;
+
+public class JavaLibs5026201138{
+	public static void main(String [] args){
+	
+		int test = JOptionPane.showConfirmDialog(null, "Welcome to the 'Mad Lib Story Maker'-ish, i will give you 10 question to answer to make the story, are you ready?\"", "First thing first", JOptionPane.YES_NO_OPTION);
+		if(test == JOptionPane.NO_OPTION) {
+			System.exit(0);
+		}
+		else {
+		//name
+		String name = (String)JOptionPane.showInputDialog(null, "First thing first, what is your name?", "Introduction", 1, null, null, "String");
+		//male name
+		String maleName = (String)JOptionPane.showInputDialog(null, "Give me a male name", "Question #1", 1, null, null, "String");
+		//verb (-ing)
+		String verbIng = (String)JOptionPane.showInputDialog(null, "So, if i told you that you can do one thing before this earth explodes, what would it be?", "Question #2", 1, null, null, "a verb ending with -ing(i.e Studying");
+		//whole number
+		int wholeNumber = Integer.parseInt(JOptionPane.showInputDialog(null, "Give me a whole number", "Question #3", 1));
+		//distance
+		double distance = Double.parseDouble(JOptionPane.showInputDialog(null, "Give me an amount of distance in meter(i.e 10)", "Question #4", 1));
+		//time limit
+		double timeHour = Double.parseDouble(JOptionPane.showInputDialog(null, "You sleep _____ hours every night", "Question #5", 1));
+		//number ranging from 0 to 1
+		double fraction = Double.parseDouble(JOptionPane.showInputDialog(null, "Give me a number between 0 and 1", "Question #6", 1));
+		//male teacher name
+		String maleTeacherName = (String)JOptionPane.showInputDialog(null, "Give me a male teacher name", "Question #7", 1, null, null, "String");
+		//plural noun
+		String pluralNoun = (String)JOptionPane.showInputDialog(null, "Give me a plural noun", "Question #8", 1, null, null, "String");
+		//plural subject
+		String pluralSubject = (String)JOptionPane.showInputDialog(null, "Give me a plural subject", "Question #9", 1, null, null, "String");
+		//vehicle name
+		String vehicle = (String)JOptionPane.showInputDialog(null, "Give me a vehicle name", "Question #10", 1, null, null, "String");
+    //double operation
+		double homeworkInTime = timeHour / wholeNumber;
+    //double operation
+		double percentage = wholeNumber * fraction;
+    //the full story
+		String cerita = "You, " + name + ", helped me write this story.\r\n"
+				+ "\r\n"
+				+ "This is " + maleName + ", he is a student in Oracle High School, and today, " + maleName +" is late.\r\n"
+				+ "He woke up at 8 am today because he spent the last night " + verbIng +". He has " + wholeNumber + " homework left. \r\n"
+				+ "He must hurry to his school because the distance between his home and his school is " + distance + "meters. \r\n"
+				+ "After he arrived in school, he must finish his homework in " + timeHour + " hours that means he must do 1 homework in " + homeworkInTime + " hours. \r\n" 
+				+ "The teacher, Mr. " + maleTeacherName + " came when he was at " + percentage + "% of completing his work. \r\n"
+				+ "He was not done and Mr. " + maleTeacherName + " was mad at him. He was given the assignment to give out " + pluralNoun + " to " + pluralSubject + ". \r\n" 
+				+ "While riding his " + vehicle + ". " + maleName + " immidiately went to do that after school ends and he swore to himself that he wont stay up late night again.";
+		JOptionPane.showMessageDialog(null, cerita, "THE RESULTS", 1);
+    
+		}
+	}
