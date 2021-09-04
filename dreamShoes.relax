@@ -1,0 +1,33 @@
+group: DreamShoes
+Cabang = {
+noCabang, jalan, kota, kodePos
+'S01', 'Manyar 23', 'Surabaya', 60149
+'S02', 'Sudirman 17', 'Jakarta', 14968
+'S03', 'Acemo 96', 'Manokwari', 96969
+'S04', 'Koka 69', 'Manado', 96719
+'S05', 'Sultan 77', 'Jambi', 37151
+}
+Staff = {
+noStaff, namaDepan, namaBelakang, jKelamin, jabatan, noCabang
+'KL17', 'Ega', 'Fernanda', 'L', 'Manajer', 'S03'
+'KG81', 'Dimas', 'Adijanto', 'L', 'Asisten', 'S05'
+'KA96', 'Rafi ', 'Irfansyah', 'L', 'Supervisor', 'S04'
+'KV85', 'Kamisato', 'Ayaka', 'M', 'Asisten', 'S02'
+'KP01', 'Yae', 'Miko', 'M', 'Supervisor', 'S01'
+}
+Sepatu = {
+noSepatu, merk, asalProduksi, warna, harga
+'M070', 'Pogchamp', 'Indonesia', 'Hitam', 500000
+'M071', 'Kadava', 'Malaysia', 'Merah', 700000
+'M072', 'Yarima', 'Jepang', 'Putih', 650000
+'F087', 'Khandu', 'India', 'Hijau', 900000
+'U033', 'Lopin', 'Thailand', 'Kuning', 1000000
+}
+Pembeli = {
+noPembeli, nama, noSepatu, noCabang, noStaff
+'P089', 'James', 'M070', 'S02', 'KV85'
+'P087', 'Bond', 'M070', 'S02', 'KV85'
+'P023', 'John', 'U033', 'S02', 'KL17'
+'P007', 'Cena', 'M070', 'S05', 'KG81'
+'P087', 'Lloyd', 'M072', 'S04', 'KV85'
+}
